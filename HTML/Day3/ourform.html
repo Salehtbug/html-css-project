@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body style="margin: 0; height: 100vh; display: flex; justify-content: center; align-items: center; font-family: Arial, sans-serif; background-color: #f9f9f9;">
+    <form style="border: 2px solid #080808; border-radius: 8px; padding: 20px; width: 300px; text-align: left; background-color: #ffffff; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <h2 style="margin-top: 0; color: #0c0c0c;">Registration Form</h2>
+
+        <label for="first-name">First name:</label>
+        <br>
+        <input type="text" id="first-name" name="first-name" style="width: 100%; margin-bottom: 10px; padding: 5px; border: 1px solid #ccc; border-radius: 4px;">
+        <br>
+
+        <label for="last-name">Last name:</label>
+        <br>
+        <input type="text" id="last-name" name="last-name" style="width: 100%; margin-bottom: 10px; padding: 5px; border: 1px solid #ccc; border-radius: 4px;">
+        <br>
+
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" id="email" name="email" style="width: 100%; margin-bottom: 10px; padding: 5px; border: 1px solid #ccc; border-radius: 4px;">
+        <br>
+
+        <label>Gender:</label>
+        <br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <label for="city">City:</label>
+        <select id="city" name="city" style="width: 100%; margin-bottom: 10px; padding: 5px; border: 1px solid #ccc; border-radius: 4px;">
+            <option value="amman">Amman</option>
+            <option value="zarqa">Zarqa</option>
+            <option value="irbid">Irbid</option>
+        </select>
+
+        <button type="submit" style="display: block; width: 100%; border: 1px solid #111111; background-color: #0e0e0f; color: #fff; padding: 8px; border-radius: 4px; cursor: pointer; text-align: center;">
+            Sign up
+        </button>
+    </form>
+</body>
+</html>

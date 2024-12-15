@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body style="background-color: #f5f5f5; margin: 0; height: 100vh; display: flex; justify-content: center; align-items: center;"> 
+    <form style="background-color: #ffffcc; padding: 20px; border: 1px solid #000; width: 300px; text-align: left;"> 
+        <h1 style="text-align: center;">Registration Form</h1>
+        <fieldset style="background-color: #ffffe0; border: 1px solid #ccc; padding: 10px;">
+            <legend>Personal details</legend>
+            <label for="first-name">First name</label>
+            <br>
+            <input type="text" id="first-name" name="first-name" style="width: 100%;">
+            <br><br>
+
+            <label for="last-name">Last name</label>
+            <br>
+            <input type="text" id="last-name" name="last-name" style="width: 100%;">
+            <br><br>
+
+            <label for="email">Email address</label>
+            <br>
+            <input type="email" id="email" name="email" style="width: 100%;">
+            <br><br>
+
+            <label>Gender</label>
+            <br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </fieldset>
+
+        <fieldset style="background-color: #ffffe0; border: 1px solid #ccc; padding: 10px; margin-top: 10px;">
+            <legend>City</legend>
+            <label for="city">City</label>
+            <select id="city" name="city" style="width: 100%;">
+                <option value="amman">Amman</option>
+                <option value="zarqa">Zarqa</option>
+                <option value="irbid">Irbid</option>
+            </select>
+        </fieldset>
+
+        <br>
+        <button type="submit" style="display: block; margin: 0 auto;">Subscribe</button> 
+    </form>
+</body>
+</html>
