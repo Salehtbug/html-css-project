@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h2 {
+      margin: 20px 0 10px;
+    }
+
+   
+    .container {
+      display: flex;
+      gap: 10px;
+      border: 1px dashed black;
+      padding: 10px;
+      width: fit-content;
+      margin-bottom: 20px; 
+      position: relative; 
+    }
+
+    
+    .box {
+      width: 100px;
+      height: 100px;
+      color: black;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .red {
+      background-color: red;
+    }
+
+    .green {
+      background-color: green;
+    }
+
+   
+    .relative {
+      position: relative;
+      top: 20px; 
+      left: 20px;
+      z-index: 1; 
+    }
+
+    
+    .absolute {
+      position: absolute;
+      top: 0; 
+      left: 0;
+      z-index: 2; 
+    }
+
+    
+    .relative-parent {
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+ 
+  <h2>position: static</h2>
+  <div class="container">
+    <div class="box red">One</div>
+    <div class="box green">Two</div>
+    <div class="box red">Three</div>
+    <div class="box red">Four</div>
+  </div>
+
+  
+  <h2>position: relative</h2>
+  <div class="container">
+    <div class="box red">One</div>
+    <div class="box green relative">Two</div>
+    <div class="box red">Three</div>
+    <div class="box red">Four</div>
+  </div>
+
+  
+  <h2>position: absolute</h2>
+  <div class="container relative-parent">
+    <div class="box red">One</div>
+    <div class="box green absolute">Two</div>
+    <div class="box red">Three</div>
+    <div class="box red">Four</div>
+  </div>
+</body>
+</html>

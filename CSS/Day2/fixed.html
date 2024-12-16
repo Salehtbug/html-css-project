@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>colorcolumn</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f1f1f1;
+    }
+
+    .container {
+      display: flex;
+      border: 10px solid goldenrod;
+      width: 90%;
+      max-width: 1200px;
+      height: 400px;
+    }
+
+    .column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      background-color: transparent;
+    }
+
+    .number {
+      position: absolute;
+      top: 10px; 
+      color: white;
+      font-size: 48px;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+    }
+
+    .box {
+      flex: 1;
+      width: 100%;
+    }
+
+   
+    .col-1 .box { background-color: green; }
+    .col-2 .box { background-color: yellow; }
+    .col-3 .box { background-color: purple; }
+    .col-4 .box { background-color: gray; }
+    .col-5 .box { background-color: blue; }
+    .col-6 .box { background-color: orange; }
+    .col-7 .box { background-color: pink; }
+    .col-8 .box { background-color: red; }
+    .col-9 .box { background-color: brown; }
+
+    
+    .col-2 .number { color: black; }
+    .col-7 .number { color: white; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="column col-1">
+      <div class="number">1</div>
+      <div class="box"></div>
+    </div>
+    <div class="column col-2">
+      <div class="number">2</div>
+      <div class="box"></div>
+    </div>
+    <div class="column col-3">
+      <div class="number">3</div>
+      <div class="box"></div>
+    </div>
+    <div class="column col-4">
+      <div class="number">4</div>
+      <div class="box"></div>
+    </div>
+    <div class="column col-5">
+      <div class="number">5</div>
+      <div class="box"></div>
+    </div>
+    <div class="column col-6">
+      <div class="number">6</div>
+      <div class="box"></div>
+    </div>
+    <div class="column col-7">
+      <div class="number">7</div>
+      <div class="box"></div>
+    </div>
+    <div class="column col-8">
+      <div class="number">8</div>
+      <div class="box"></div>
+    </div>
+    <div class="column col-9">
+      <div class="number">9</div>
+      <div class="box"></div>
+    </div>
+  </div>
+</body>
+</html>

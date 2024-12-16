@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f8f8f8;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 0px; 
+      width: 80%;
+      max-width: 900px;
+      border: 10px solid #DDA01F; 
+      border-radius: 8px;
+    }
+
+    .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+      color: white;
+      font-weight: bold;
+    }
+
+    
+    .item:nth-child(1) { background-color: #17C3B2; }
+    .item:nth-child(2) { background-color: #3A86FF; }
+    .item:nth-child(3) { background-color: #B565D9; }
+    .item:nth-child(4) { background-color: #2C3E50; }
+    .item:nth-child(5) { background-color: #F4B400; }
+    .item:nth-child(6) { background-color: #F3722C; }
+    .item:nth-child(7) { background-color: #EF4136; }
+    .item:nth-child(8) { background-color: #C0C5CE; }
+    .item:nth-child(9) { background-color: #34D399; }
+    .item:nth-child(10) { background-color: #0CA678; }
+    .item:nth-child(11) { background-color: white; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+    <div class="item">10</div>
+    <div class="item"></div>
+  </div>
+</body>
+</html>
